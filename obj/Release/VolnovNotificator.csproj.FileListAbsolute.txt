@@ -1,0 +1,10 @@
+c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\VolnovNotificator.Form1.resources
+c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\VolnovNotificator.Properties.Resources.resources
+c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\VolnovNotificator.csproj.GenerateResource.Cache
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\VolnovNotificator.CreditsForm.resources
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\VolnovNotificator.Resource1.resources
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\bin\Release\notificator.exe.config
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\bin\Release\notificator.exe
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\bin\Release\notificator.pdb
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\notificator.exe
+C:\Users\Root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Release\notificator.pdb
