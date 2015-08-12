@@ -11,13 +11,13 @@ using System.Windows.Forms;
 
 namespace VolnovNotificator
 {
-    public partial class Form1 : Form
+    public partial class TrayWindow : Form
     {
         private CreditsForm _crefitsForm = new CreditsForm();
         private AppSettingsWrapper _appSettingsWrapper = new AppSettingsWrapper("settings.cnf");
         KeyValuePair<string, string> _lastMessagesValuePair;
 
-        public Form1()
+        public TrayWindow()
         {
             InitializeComponent();
             CheckNewAppVersion();
@@ -140,9 +140,9 @@ namespace VolnovNotificator
         private bool CheckAutorun()
         {
             const string registryKeyName = "PrankotaNf";
-            RegistryKey regKey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\");
-            string[] allKeys = regKey.GetValueNames();
-            bool inAutorun = false;
+            var regKey = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\");
+            var allKeys = regKey.GetValueNames();
+            var inAutorun = false;
             foreach (string key in allKeys)
             {
                 if (key == registryKeyName)
@@ -162,7 +162,7 @@ namespace VolnovNotificator
         {
             if (soundNotifyToolStripMenuItem.Checked)
             {
-                SoundPlayer player = new System.Media.SoundPlayer(Resource1.lolNotifySound1);
+                var player = new SoundPlayer(Resource1.lolNotifySound1);
                 player.Play();
             }
         }

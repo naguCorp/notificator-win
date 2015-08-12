@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VolnovNotificator</RootNamespace>
     <AssemblyName>notificator</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -56,11 +56,11 @@
     <Compile Include="CreditsForm.Designer.cs">
       <DependentUpon>CreditsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="TrayWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TrayWindow.Designer.cs">
+      <DependentUpon>TrayWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="MessagesReceive.cs" />
     <Compile Include="Program.cs" />
@@ -73,8 +73,8 @@
     <EmbeddedResource Include="CreditsForm.resx">
       <DependentUpon>CreditsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TrayWindow.resx">
+      <DependentUpon>TrayWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

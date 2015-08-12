@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace VolnovNotificator
@@ -15,7 +13,7 @@ namespace VolnovNotificator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            new Form1();
+            new TrayWindow();
             Application.Run();
         }
     }

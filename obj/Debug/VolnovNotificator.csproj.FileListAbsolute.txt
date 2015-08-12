@@ -8,3 +8,14 @@ c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNoti
 c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Debug\VolnovNotificator.pdb
 c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Debug\VolnovNotificator.CreditsForm.resources
 c:\users\root\documents\visual studio 2013\Projects\VolnovNotificator\VolnovNotificator\obj\Debug\VolnovNotificator.Resource1.resources
+H:\Developers\C#\notificator-win\bin\Debug\notificator.exe.config
+H:\Developers\C#\notificator-win\bin\Debug\notificator.exe
+H:\Developers\C#\notificator-win\bin\Debug\notificator.pdb
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.csprojResolveAssemblyReference.cache
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.CreditsForm.resources
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.TrayWindow.resources
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.Properties.Resources.resources
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.Resource1.resources
+H:\Developers\C#\notificator-win\obj\Debug\VolnovNotificator.csproj.GenerateResource.Cache
+H:\Developers\C#\notificator-win\obj\Debug\notificator.exe
+H:\Developers\C#\notificator-win\obj\Debug\notificator.pdb

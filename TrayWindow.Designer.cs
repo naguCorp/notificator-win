@@ -1,6 +1,6 @@
 ﻿namespace VolnovNotificator
 {
-    partial class Form1
+    partial class TrayWindow
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrayWindow));
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.notifyCm = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.soundNotifyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -113,13 +113,14 @@
             this.firstLoadAppBw.DoWork += new System.ComponentModel.DoWorkEventHandler(this.firstLoadAppBw_DoWork);
             this.firstLoadAppBw.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.firstLoadAppBw_RunWorkerCompleted);
             // 
-            // Form1
+            // TrayWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(199, 77);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "TrayWindow";
+            this.Text = "TrayWindow";
             this.notifyCm.ResumeLayout(false);
             this.ResumeLayout(false);
 

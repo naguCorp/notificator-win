@@ -20,14 +20,14 @@ namespace VolnovNotificator
 
         private void CreditsForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = true;           
-            this.Hide();
+            e.Cancel = true;
+            Hide();
         }
 
         private void CreditsForm_VisibleChanged(object sender, EventArgs e)
         {
-            if(this.Visible == true)
-                this.Location = new Point((Screen.PrimaryScreen.Bounds.Width - this.Width) / 2, (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2);
+            if(Visible == true)
+                Location = new Point((Screen.PrimaryScreen.Bounds.Width - this.Width) / 2, (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2);
         }
 
         private void CreditsForm_Load(object sender, EventArgs e)
