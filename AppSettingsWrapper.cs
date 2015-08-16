@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
+using System.Linq;
 
 namespace VolnovNotificator
 {
     class AppSettingsWrapper
     {
-        ExeConfigurationFileMap _confFileMap = new ExeConfigurationFileMap();
-        Configuration _configuration;
-        KeyValueConfigurationCollection _appSettingsKeyCollection;
+        readonly ExeConfigurationFileMap _confFileMap = new ExeConfigurationFileMap();
+        readonly Configuration _configuration;
+        readonly KeyValueConfigurationCollection _appSettingsKeyCollection;
 
         public AppSettingsWrapper(string configPath)
         {
@@ -30,10 +31,8 @@ namespace VolnovNotificator
 
         public List<KeyValuePair<string, string>> GetAllConfigData()
         {
-            List<KeyValuePair<string, string>> allConfigData = new List<KeyValuePair<string, string>>();
-            foreach (KeyValueConfigurationElement keyValueElement in _appSettingsKeyCollection)
-                allConfigData.Add(new KeyValuePair<string, string>(keyValueElement.Key, keyValueElement.Value));
-            return allConfigData;
-        } 
+            return (from KeyValueConfigurationElement keyValueElement in _appSettingsKeyCollection
+                         select new KeyValuePair<string, string>(keyValueElement.Key, keyValueElement.Value)).ToList();
+        }
     }
 }

@@ -6,14 +6,14 @@ namespace VolnovNotificator
 {
     class MessagesReceive
     {
-        private static string domain = "http://prankota.com/";
+        private static string _domain = "http://prankota.com/";
 
         private static string GetHttpContent(string query)
         {
             using (var webClient = new WebClient())
             {
                 webClient.Encoding = Encoding.UTF8;
-                return webClient.DownloadString(domain + query);
+                return webClient.DownloadString(_domain + query);
             }
         }
 
@@ -24,17 +24,20 @@ namespace VolnovNotificator
 
         private static KeyValuePair<string, string> GetMessages(string query)
         {
-            string messagesContent = GetHttpContent(query);
-            KeyValuePair<string, string> messageValuePair = new KeyValuePair<string, string>();
+            var messagesContent = GetHttpContent(query);
+            var messageValuePair = new KeyValuePair<string, string>();
+            var message = messagesContent.Split(';');
 
-            string[] message = messagesContent.Split(';');
-            if (message.Length == 2)
-                messageValuePair = new KeyValuePair<string, string>(message[0], message[1]);
-            else
+            switch (message.Length)
             {
-                if (message.Length == 1)
+                case 2:
+                    messageValuePair = new KeyValuePair<string, string>(message[0], message[1]);
+                    break;
+                case 1:
                     messageValuePair = new KeyValuePair<string, string>(message[0], null);
+                    break;
             }
+
             return messageValuePair;
         }
     }

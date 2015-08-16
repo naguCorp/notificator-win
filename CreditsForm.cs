@@ -26,8 +26,8 @@ namespace VolnovNotificator
 
         private void CreditsForm_VisibleChanged(object sender, EventArgs e)
         {
-            if(Visible == true)
-                Location = new Point((Screen.PrimaryScreen.Bounds.Width - this.Width) / 2, (Screen.PrimaryScreen.Bounds.Height - this.Height) / 2);
+            if(Visible)
+                Location = new Point((Screen.PrimaryScreen.Bounds.Width - Width) / 2, (Screen.PrimaryScreen.Bounds.Height - Height) / 2);
         }
 
         private void CreditsForm_Load(object sender, EventArgs e)
